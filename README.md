@@ -1,2 +1,2 @@
 # CostAccountingTable
-A full-stack adasdasd
+A frontend part
