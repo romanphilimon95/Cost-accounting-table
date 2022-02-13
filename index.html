@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cost accounting table</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <div class="content-wrapper">
+      <div class="header">
+        <p class="title">
+          Учет расходов
+        </p>
+        <div class="inputs-wrapper">
+          <div class="print-shop">
+            <p>Куда было потрачено:</p>
+            <input type="text" placeholder="Куда было потрачено">
+          </div>
+          <div class="print-amount">
+            <p>Сколько было потрачено:</p>
+            <input type="number" placeholder="Сколько было потрачено">
+          </div>
+          <button class="submit" onclick="addNote(event)">
+            Добавить
+          </button>
+        </div>
+        <p class="total-expenses">
+          Итого: 0000 р.
+        </p>
+      </div>
+      <div class="expenses-root">
+
+      </div>
+    </div>
+  </body>
+</html>

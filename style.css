@@ -1,0 +1,441 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(197, 229, 250);
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  font-family: sans-serif;
+  font-size: 3.5rem;
+  font-style: italic;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1100px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  background: rgb(197, 229, 250);
+  z-index: 5;
+  width: inherit;
+}
+
+.inputs-wrapper {
+  display: flex;
+  align-items: flex-end;
+}
+
+.inputs-wrapper p {
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 1.35rem;
+  margin-bottom: 6px;
+}
+
+.inputs-wrapper input {
+  font-size: 1.8rem;
+  height: 67px;
+  padding-left: 30px;
+  border-radius: 7px;
+  border: 1px solid lightgrey;
+}
+
+.inputs-wrapper input::placeholder {
+  color: lightgrey;
+  font-size: 1.35rem;
+}
+
+.print-shop input {
+  width: 525px;
+  margin-right: 22px;
+}
+
+.print-shop input:focus {
+  outline: none;
+}
+
+.print-amount input {
+  width: 285px;
+  margin-right: 22px;
+}
+
+.print-amount input:focus {
+  outline: none;
+}
+
+.print-amount input::-webkit-outer-spin-button,
+.print-amount input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.inputs-wrapper button {
+  height: 71px;
+  padding: 0 30px;
+  font-family: sans-serif;
+  font-size: 25px;
+  border: 0;
+  background-color: rgba(101, 196, 164, 0.897);
+  border-radius: 7px;
+}
+
+.inputs-wrapper button:hover {
+  background-color: rgba(71, 138, 115, 0.897);
+  cursor: pointer;
+}
+
+.inputs-wrapper button:active {
+  background-color: rgba(101, 196, 164, 0.897);
+  cursor: pointer;
+}
+
+.total-expenses {
+  align-self: flex-end;
+  font-family: sans-serif;
+  font-size: 2.25rem;
+  margin-bottom: 11px;
+  margin-top: 18px;
+}
+
+.expenses-root {
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  position: relative;
+  top: 353px;
+  z-index: 1;
+}
+
+.expense {
+  display: flex;
+  width: 1100px;
+  font-size: 2.25rem;
+  align-items: center;
+  padding: 11px;
+}
+
+.expense:hover {
+  box-shadow: 0 0 1px 1px black;
+}
+
+.editable-data {
+  font-size: 2.25rem;
+  outline: none;
+  border: none;
+  background: none;
+  color: black;
+  width: 80%;
+}
+
+.ready-to-edit {
+  background-color: white;
+  box-shadow: 0 0 1px 1px grey;
+}
+
+.shop {
+  width: 45%;
+  display: flex;
+  align-items: center;
+}
+
+.shop p {
+  width: fit-content;
+}
+
+.shop div {
+  width: 90%;
+  height: fit-content;
+}
+
+.date-amount-wrapper {
+  display: flex;
+  width: 55%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.date {
+  width: 260px;
+  margin-left: 7px;
+}
+
+.date::-webkit-datetime-edit {
+  font-size:2.25rem;
+}
+
+.date::-webkit-calendar-picker-indicator {
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.amount {
+  width: 180px;
+  margin-left: 9px;
+}
+
+.buttons {
+  margin-right: 0;
+  width: 127px;
+  justify-self: flex-end;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.edit {
+  width: fit-content;
+  height: fit-content;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background: none;
+}
+
+.edit img {
+  width: 45px;
+  height: 45px;
+}
+
+.edit:hover {
+  cursor: pointer;
+}
+
+.delete {
+  width: fit-content;
+  height: fit-content;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background: none;
+}
+
+.delete img {
+  width: 45px;
+  height: 45px;
+  margin-left: 15px;
+}
+
+.delete:hover {
+  cursor: pointer;
+}
+
+
+@media (max-width: 1110px) {
+  .title {
+    font-size: 2.25rem;
+  }
+
+  .content-wrapper {
+    width: 738px;
+  }
+
+  .inputs-wrapper p {
+    font-size: 0.9rem;
+    margin: 0;
+    margin-bottom: 6px;
+  }
+
+  .inputs-wrapper input {
+    font-size: 1.2rem;
+    height: 45px;
+    padding-left: 20px;
+    border-radius: 5px;
+  }
+
+  .inputs-wrapper input::placeholder {
+    font-size: 0.9rem;
+  }
+
+  .print-shop input {
+    width: 350px;
+    margin-right: 10px;
+    height: 43px;
+  }
+
+  .print-amount input {
+    width: 190px;
+    margin-right: 10px;
+    height: 43px;
+  }
+
+  .inputs-wrapper button {
+    height: 47px;
+    padding: 0 20px;
+    font-size: 18px;
+    border-radius: 5px;
+  }
+
+  .total-expenses {
+    font-size: 1.5rem;
+    margin-bottom: 7px;
+    margin-top: 12px;
+  }
+
+  .expenses-root {
+    top: 235px;
+  }
+
+  .expense {
+    width: 738px;
+    font-size: 1.5rem;
+    padding: 7px;
+  }
+
+  .editable-data {
+    font-size: 1.5rem;
+  }
+
+  .date {
+    width: 180px;
+    margin-left: 5px;
+  }
+
+  .amount {
+    width: 120px;
+    margin-left: 6px;
+  }
+
+  .buttons {
+    width: 85px;
+  }
+
+  .edit img, .delete img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .date::-webkit-datetime-edit {
+    font-size: 1.5rem;
+  }
+  
+  .date::-webkit-calendar-picker-indicator {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
+  
+}
+
+@media (max-width: 780px) {
+  .title {
+    font-size: 1.8rem;
+  } 
+
+  .content-wrapper {
+    width: 96vw;
+  }
+  
+  .inputs-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .print-shop, .print-amount {
+    margin-right: 0;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .print-shop input {
+    width: calc(100% - 24px);
+    margin-top: 5px;
+  }
+
+  .print-amount input {
+    width: calc(100% - 24px);
+    margin-top: 5px;
+  }
+
+  .inputs-wrapper button {
+    align-self: flex-end;
+    width: 200px;
+    height: 35px;
+  }
+
+  .expenses-root {
+    width: 100%;
+    top: 345px;
+  }
+
+  .expense {
+    width: 100%;
+    justify-content: space-between;
+    font-size: 1.325rem;
+    align-items: flex-start;
+    padding: 5px 2px;
+  }
+
+  .shop {
+    width: 55%;
+  }
+
+  .shop p {
+    margin: 0;
+  }
+
+  .shop input {
+    width: 88%;
+    height: fit-content;
+    font-size: 1.325rem;
+  }
+
+  .date-amount-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 43%;
+    align-items: flex-start;
+    padding-right: 2px;
+  }
+
+  .editable-data {
+    font-size: 1.325rem;
+    width: 90%;
+  }
+
+  .date {
+    width: 100%;
+    margin-bottom: 5px;
+    margin-left: 0;
+    text-align: end;
+  }
+
+  .amount {
+    width: 100%;
+    margin: 5px 0;
+    padding: 0;
+    text-align: end;
+  }
+
+  .buttons {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+
+  .buttons img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .date::-webkit-datetime-edit {
+    font-size: 1.3rem;
+  }
+  
+  .date::-webkit-calendar-picker-indicator {
+    width: 18px;
+    height: 18px;
+    margin-right: 4px;
+  }
+}
